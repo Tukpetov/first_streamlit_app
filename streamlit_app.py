@@ -39,5 +39,5 @@ streamlit.text(my_data_row)
 
 #attempt to add one more fruit
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
-streamlit.text("Thank you for chosing:streamlit.text(add_my_fruit) ")
+streamlit.text("Thank you for chosing: ",add_my_fruit)
 
