@@ -23,7 +23,7 @@ fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.in
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 #create the repaetebale code block
-def get_fruityvice_data
+def get_fruityvice_data(this_fruit_choice)
   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+this_fruit_choice)
   fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
   return streamlit.dataframe(fruityvice_normalized)
